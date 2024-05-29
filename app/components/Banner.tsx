@@ -39,14 +39,6 @@ const Banner = () => {
           <h1 className="text-5xl">
             {movie?.title || movie?.name || movie?.originalName}
           </h1>
-          <div>
-            <button className="outline-none border-0 cursor-pointer bg-black/45 text-white font-bold rounded-[0.2vw] py-2 px-8 mr-4 hover:text-black hover:bg-[#e6e6e6] transition-all ">
-              Play
-            </button>
-            <button className="outline-none border-0 cursor-pointer bg-black/45 text-white font-bold rounded-[0.2vw] py-2 px-8 mr-4 hover:text-black hover:bg-[#e6e6e6] transition-all ">
-              My list
-            </button>
-          </div>
           <h1>{truncate(movie?.overview, 150)}</h1>
         </div>
       </div>
