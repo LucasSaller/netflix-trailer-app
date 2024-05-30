@@ -49,8 +49,8 @@ const NavBar = () => {
         </a>
       </div>
       <Image
-        className="fixed right-5 w-8"
-        src={avatar}
+        className="fixed right-5 "
+        src="https://loodibee.com/wp-content/uploads/Netflix-avatar-7.png"
         alt="avatar"
         width={32} // Adjust width as needed
         height={32} // Adjust height as needed

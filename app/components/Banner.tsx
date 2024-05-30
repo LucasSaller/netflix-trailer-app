@@ -35,11 +35,11 @@ const Banner = () => {
     >
       {/* max-w-[330px] */}
       <div className="ml-8 pt-[380px] h-[190px] max-w-96">
-        <div className="flex flex-col gap-5">
-          <h1 className="text-5xl">
+        <div className="flex flex-col gap-5 bg-black/40 p-7 rounded-lg">
+          <h1 className="text-4xl">
             {movie?.title || movie?.name || movie?.originalName}
           </h1>
-          <h1>{truncate(movie?.overview, 150)}</h1>
+          <p>{truncate(movie?.overview, 150)}</p>
         </div>
       </div>
       <div
