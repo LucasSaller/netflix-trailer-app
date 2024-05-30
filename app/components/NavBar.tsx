@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import Linkedin from "@/app/social-icons/Linkedin";
 import Instagram from "@/app/social-icons/InstagramIcon";
 import Github from "@/app/social-icons/GithubIcon";
-import avatar from "@/app/assets/avatar-netflix.png";
+import avatar from "@/app/assets/mesek.png";
 import Image from "next/image"; // Importing Next.js Image component
 
 const NavBar = () => {
@@ -26,12 +26,12 @@ const NavBar = () => {
   }, []);
   return (
     <div
-      className={`fixed top-0 z-10 h-16 flex justify-between w-full p-5 max-w-[100vw] transition-all ease-in  ${
+      className={`fixed top-0 z-10 h-20 flex justify-between w-full p-5 max-w-[100vw] transition-all ease-in  ${
         handleShow && "bg-[#111]"
       }`}
     >
       <Image
-        className="fixed left-5 w-20 object-contain"
+        className="fixed top-8 left-5 w-20 object-contain"
         src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
         alt="avatar"
         width={80} // Adjust width as needed
@@ -50,10 +50,10 @@ const NavBar = () => {
       </div>
       <Image
         className="fixed right-5 "
-        src="https://loodibee.com/wp-content/uploads/Netflix-avatar-7.png"
+        src={avatar}
         alt="avatar"
-        width={32} // Adjust width as needed
-        height={32} // Adjust height as needed
+        width={50} // Adjust width as needed
+        height={50} // Adjust height as needed
       />
     </div>
   );
